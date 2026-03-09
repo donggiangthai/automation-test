@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | pytest overview & philosophy |
 | 15 min | Installation & first test |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## Visual Concept
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    pytest FLOW                               │
 ├─────────────────────────────────────────────────────────────┤
@@ -156,6 +156,7 @@ pytest tests/test_calculator.py -v --html=report.html
 ### pytest Discovery
 
 pytest automatically finds tests by:
+
 - Files: `test_*.py` or `*_test.py`
 - Functions: `test_*`
 - Classes: `Test*` (methods must start with `test_`)
@@ -237,10 +238,12 @@ Run with: `pytest tests/test_password.py -v`
 ## Homework (2 hours)
 
 ### Reading
+
 1. [pytest Documentation](https://docs.pytest.org/en/stable/)
 2. [pytest Good Practices](https://docs.pytest.org/en/stable/explanation/goodpractices.html)
 
 ### Coding Tasks
+
 1. **Calculator Tests:** Write 10 tests for add, subtract, multiply, divide functions
 2. **String Validator Tests:** Test email, phone, credit card validation functions from Week 1
 3. **Explore Options:** Try running with different flags:
@@ -250,6 +253,7 @@ Run with: `pytest tests/test_password.py -v`
    - `pytest --html=report.html` (HTML report)
 
 ### Quiz Yourself
+
 1. How does pytest discover test files and functions?
 2. What's the difference between `assert` and `pytest.raises()`?
 3. What does the `-v` flag do?

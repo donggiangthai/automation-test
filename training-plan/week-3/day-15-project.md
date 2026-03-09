@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Week 3 concepts recap |
 | 15 min | Project requirements review |
 | 45 min | Mini-project implementation |
@@ -26,7 +26,7 @@
 
 ## Project: E2E Test Suite for Mock Project
 
-```
+```text
 automation-test/
 ├── e2e-tests/
 │   ├── pages/
@@ -124,7 +124,7 @@ def test_product_list_with_mock(page: Page, product_page):
 ## Evaluation Criteria
 
 | Criteria | Points |
-|----------|--------|
+| ---------- | -------- |
 | Page Objects implemented correctly | 25 |
 | 8+ test cases working | 25 |
 | Network mocking used | 20 |
@@ -145,12 +145,15 @@ def test_product_list_with_mock(page: Page, product_page):
 ## Homework (2 hours)
 
 ### Extend the Project
+
 1. Add 4 more test cases to reach 12 total
 2. Add error scenario tests (mocked 500 errors)
 3. Add visual regression test (screenshot comparison)
 
 ### Week 3 Self-Assessment
+
 Complete all checklist items:
+
 - [ ] Playwright setup with production conftest.py
 - [ ] Role-based locators preferred
 - [ ] No time.sleep() in tests
@@ -159,6 +162,7 @@ Complete all checklist items:
 - [ ] Tests organized with markers
 
 ### Prepare for Week 4
+
 1. Get GitHub Copilot access (free trial or subscription)
 2. Install VS Code extensions: GitHub Copilot, GitHub Copilot Chat
 3. Preview: Think about how AI can help write tests faster

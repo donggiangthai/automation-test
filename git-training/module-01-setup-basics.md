@@ -8,7 +8,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 15 min | Introduction to version control |
 | 30 min | Installation & setup (hands-on) |
 | 30 min | Core concepts & first commit |
@@ -22,6 +22,7 @@
 ### Install Git
 
 **Windows:**
+
 ```powershell
 # Using winget (recommended)
 winget install Git.Git
@@ -31,6 +32,7 @@ git --version
 ```
 
 **macOS:**
+
 ```bash
 # Git comes with Xcode Command Line Tools
 xcode-select --install
@@ -90,7 +92,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ### The Three States of Git
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                     GIT WORKFLOW                            │
 ├─────────────────────────────────────────────────────────────┤
@@ -114,7 +116,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 ### Key Terms
 
 | Term | What It Means | Analogy |
-|------|---------------|---------|
+| ------ | --------------- | --------- |
 | **Repository (Repo)** | Project folder tracked by Git | A project folder with history |
 | **Commit** | Snapshot of your code at a point in time | Save game checkpoint |
 | **Branch** | Independent line of development | Parallel universe |
@@ -125,7 +127,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ### Visual: Git Mental Model
 
-```
+```text
                     ┌─────────────────────────────────┐
                     │         REMOTE (GitHub)          │
                     │   origin/main                    │

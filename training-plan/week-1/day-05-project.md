@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Week 1 concepts recap |
 | 15 min | Review checklist walkthrough |
 | 45 min | Mini-project implementation (follow along) |
@@ -28,7 +28,7 @@
 
 Build a command-line tool that generates test data for your QA work.
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │              TEST DATA GENERATOR                             │
 ├─────────────────────────────────────────────────────────────┤
@@ -161,21 +161,25 @@ if __name__ == "__main__":
 ## Week 1 Review Checklist
 
 ### Variables & Types
+
 - [ ] Create variables of different types
 - [ ] Use f-strings for formatting
 - [ ] Convert between types
 
 ### Control Flow
+
 - [ ] Write if/elif/else statements
 - [ ] Use comparison operators
 - [ ] Apply logical operators
 
 ### Functions
+
 - [ ] Create functions with parameters
 - [ ] Use default parameter values
 - [ ] Return values from functions
 
 ### Collections
+
 - [ ] Work with lists (append, remove, iterate)
 - [ ] Work with dictionaries (get, set, iterate)
 - [ ] Use list comprehensions
@@ -187,12 +191,14 @@ if __name__ == "__main__":
 Try adding these features:
 
 1. **Command-line arguments:**
+
    ```python
    import sys
    count = int(sys.argv[1]) if len(sys.argv) > 1 else 3
    ```
 
 2. **Input validation:**
+
    ```python
    def generate_users(count):
        if count < 1 or count > 100:
@@ -201,6 +207,7 @@ Try adding these features:
    ```
 
 3. **Export to CSV:**
+
    ```python
    import csv
    with open("users.csv", "w", newline="") as f:
@@ -214,12 +221,14 @@ Try adding these features:
 ## Homework (2 hours)
 
 ### Extend the Project
+
 1. Add more data generators:
    - `generate_address()` - street, city, zip, country
    - `generate_credit_card()` - number (fake), expiry, cvv
    - `generate_review()` - rating, comment, date
 
 2. Create a simple CLI menu:
+
    ```python
    print("1. Generate Users")
    print("2. Generate Products")
@@ -230,9 +239,11 @@ Try adding these features:
 3. Add data validation before saving
 
 ### Week 1 Self-Assessment
+
 Complete the checklist above - if you can check all boxes, you're ready for Week 2!
 
 ### Prepare for Week 2
+
 1. Install pytest: `pip install pytest pytest-html`
 2. Read: [pytest Getting Started](https://docs.pytest.org/en/stable/getting-started.html)
 3. Preview: Think about how you would test your data generator functions

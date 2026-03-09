@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Review Day 2 & intro |
 | 20 min | Function concepts & syntax |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## Visual Concept
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    FUNCTIONS                                 │
 ├─────────────────────────────────────────────────────────────┤
@@ -208,10 +208,12 @@ for email, expected in test_cases:
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Python Functions](https://www.w3schools.com/python/python_functions.asp)
 2. [Python Lambda](https://www.w3schools.com/python/python_lambda.asp)
 
 ### Coding Tasks
+
 1. **Test Data Generator:** Create 5 utility functions:
    - `generate_random_string(length)`
    - `generate_random_email(domain)`
@@ -227,6 +229,7 @@ for email, expected in test_cases:
    - Credit card format (simple)
 
 ### Quiz Yourself
+
 1. What's the difference between parameters and arguments?
 2. What does a function return if there's no `return` statement?
 3. How do you provide a default value for a parameter?

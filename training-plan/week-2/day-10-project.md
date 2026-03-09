@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Week 2 concepts recap |
 | 15 min | Project requirements review |
 | 45 min | Mini-project implementation |
@@ -26,7 +26,7 @@
 
 ## Mini-Project: Test Suite for User Management
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │          WEEK 2 PROJECT STRUCTURE                            │
 ├─────────────────────────────────────────────────────────────┤
@@ -219,21 +219,25 @@ pytest tests/test_user_management.py -v --cov=. --cov-report=html
 ## Week 2 Review Checklist
 
 ### pytest Basics
+
 - [ ] Write tests with meaningful assertions
 - [ ] Understand pytest discovery rules
 - [ ] Use pytest.raises for exception testing
 
 ### Fixtures
+
 - [ ] Create fixtures in conftest.py
 - [ ] Use fixture scopes (function, session)
 - [ ] Implement cleanup with yield
 
 ### Parameterized Tests
+
 - [ ] Use @pytest.mark.parametrize
 - [ ] Create test IDs with pytest.param
 - [ ] Combine multiple parametrize decorators
 
 ### Test Organization
+
 - [ ] Use custom markers
 - [ ] Configure pytest.ini
 - [ ] Run tests selectively with -m
@@ -243,14 +247,17 @@ pytest tests/test_user_management.py -v --cov=. --cov-report=html
 ## Homework (2 hours)
 
 ### Extend the Project
+
 1. Add `update_user(email, new_data)` method and tests
 2. Add `list_users()` method with filters and tests
 3. Implement password hashing (mock) and test it
 
 ### Week 2 Self-Assessment
+
 Complete all checklist items. If you can check all boxes, you're ready for Week 3!
 
 ### Prepare for Week 3
+
 1. Install Playwright: `pip install pytest-playwright && playwright install`
 2. Visit [Playwright Docs](https://playwright.dev/python/)
 3. Preview: Think about how to test web UIs automatically

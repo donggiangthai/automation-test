@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Review Day 3 & intro |
 | 25 min | Lists, dictionaries, loops theory |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## Visual Concept
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │              COLLECTIONS IN PYTHON                           │
 ├─────────────────────────────────────────────────────────────┤
@@ -217,16 +217,18 @@ for test in search_test_data:
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Python Lists](https://www.w3schools.com/python/python_lists.asp)
 2. [Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 3. [Python For Loops](https://www.w3schools.com/python/python_for_loops.asp)
 
 ### Coding Tasks
+
 1. **Test Data Manager:** Create a class that stores:
    - List of test users (dictionaries)
    - Methods to add, remove, find users
-   
 2. **Page Elements Dictionary:** Create a dictionary storing selectors:
+
    ```python
    login_page = {
        "username": "#username",
@@ -241,6 +243,7 @@ for test in search_test_data:
    - Create list of emails from usernames
 
 ### Quiz Yourself
+
 1. What's the difference between list and dictionary?
 2. How do you safely get a dict value that might not exist?
 3. What does `enumerate()` return?

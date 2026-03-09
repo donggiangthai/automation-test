@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Why organize tests with markers? |
 | 15 min | pytest.ini & marker configuration |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## Visual Concept
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │               TEST ORGANIZATION WITH MARKERS                 │
 ├─────────────────────────────────────────────────────────────┤
@@ -154,7 +154,7 @@ pytest -m "not slow"
 ## Built-in Markers
 
 | Marker | Purpose |
-|--------|---------|
+| -------- | --------- |
 | `@pytest.mark.skip(reason="...")` | Skip test always |
 | `@pytest.mark.skipif(condition, reason="...")` | Skip conditionally |
 | `@pytest.mark.xfail(reason="...")` | Expected to fail |
@@ -179,7 +179,7 @@ def test_new_feature():
 
 ## Marker Strategy for QA
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    MARKER STRATEGY                          │
 ├─────────────────────────────────────────────────────────────┤
@@ -222,6 +222,7 @@ def test_homepage_loads():
 ```
 
 Run different combinations:
+
 ```bash
 pytest -m smoke -v
 pytest -m "regression and not slow" -v
@@ -233,10 +234,12 @@ pytest -m "smoke or login" -v
 ## Homework (2 hours)
 
 ### Reading
+
 1. [pytest Markers](https://docs.pytest.org/en/stable/how-to/mark.html)
 2. [Built-in Markers](https://docs.pytest.org/en/stable/reference/reference.html#marks)
 
 ### Coding Tasks
+
 1. **Marker Strategy:** Design your marker strategy:
    - Define at least 5 custom markers in pytest.ini
    - Create 15 tests using these markers
@@ -250,6 +253,7 @@ pytest -m "smoke or login" -v
 3. **Priority System:** Implement P0/P1/P2 markers
 
 ### Quiz Yourself
+
 1. Where do you define custom markers?
 2. How do you combine markers with `and`, `or`, `not`?
 3. What's the difference between `@skip` and `@xfail`?

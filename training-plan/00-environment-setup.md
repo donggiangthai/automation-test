@@ -55,7 +55,7 @@ mkdir tests pages utils data
 ## 5. Keyboard Shortcuts Reference (Windows)
 
 | Action | Shortcut |
-|--------|----------|
+| -------- | ---------- |
 | Copy | `Ctrl+C` |
 | Paste | `Ctrl+V` |
 | Cut | `Ctrl+X` |
@@ -88,12 +88,14 @@ print(f"Python version: {__import__('sys').version}")
 ```
 
 Run it:
+
 ```powershell
 python hello.py
 ```
 
 Expected output:
-```
+
+```text
 Hello, QA Automation!
 Python version: 3.13.x (...)
 ```

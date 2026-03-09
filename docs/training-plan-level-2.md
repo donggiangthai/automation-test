@@ -39,16 +39,19 @@ flowchart TD
 ### Day 1: Python Quick Start
 
 **Learning Objectives:**
+
 - Python syntax refresher
 - Variables, data types, operators
 - Control flow (if/else, loops)
 
 **Session Flow:**
+
 - Concept overview (30 min)
 - Hands-on coding (45 min)
 - Exercises (15 min)
 
 **Hands-on Exercise:**
+
 ```python
 # Complete these tasks:
 
@@ -75,11 +78,13 @@ role_count = Counter(u["role"] for u in users)
 ### Day 2: Functions and Modules
 
 **Learning Objectives:**
+
 - Write reusable functions
 - Use parameters and return values
 - Import and organize code
 
 **Hands-on Exercise:**
+
 ```python
 # utils/validators.py
 def validate_email(email: str) -> bool:
@@ -109,16 +114,19 @@ print(f"Password check: {pwd_check}")
 ### Day 3: Object-Oriented Basics
 
 **Learning Objectives:**
+
 - Understand classes and objects
 - Create simple classes
 - Use inheritance basics
 
 **Why OOP for Testing?**
+
 - Page Object Model uses classes
 - Test data as objects
 - Reusable test components
 
 **Hands-on Exercise:**
+
 ```python
 # models/user.py
 class User:
@@ -148,11 +156,13 @@ print(f"Is admin: {admin.is_admin()}")
 ### Day 4: Working with Data
 
 **Learning Objectives:**
+
 - Read/write JSON and CSV
 - Handle external test data
 - Data-driven testing prep
 
 **Hands-on Exercise:**
+
 ```python
 import json
 import csv
@@ -191,6 +201,7 @@ with open("users.csv", "w", newline="") as f:
 **Project:** Build a User Management Module
 
 Requirements:
+
 - User class with validation
 - Load users from JSON
 - Filter/search capabilities
@@ -203,11 +214,13 @@ Requirements:
 ### Day 6: Introduction to pytest
 
 **Learning Objectives:**
+
 - pytest structure and conventions
 - Write effective assertions
 - Run and interpret tests
 
 **pytest Basics:**
+
 ```python
 # test_basics.py
 import pytest
@@ -229,6 +242,7 @@ def test_division_by_zero():
 ```
 
 **Running Tests:**
+
 ```bash
 pytest -v                    # Verbose output
 pytest -v -k "login"         # Run tests with "login" in name
@@ -241,11 +255,13 @@ pytest -x                    # Stop on first failure
 ### Day 7: Test Organization and Fixtures
 
 **Learning Objectives:**
+
 - Organize tests effectively
 - Use fixtures for setup/teardown
 - Share fixtures across tests
 
 **Fixture Examples:**
+
 ```python
 # conftest.py
 import pytest
@@ -288,6 +304,7 @@ def test_filter_admins(user_list):
 ### Day 8: Test Design Principles
 
 **Learning Objectives:**
+
 - Write meaningful test cases
 - Cover positive and negative scenarios
 - Understand test coverage
@@ -295,13 +312,14 @@ def test_filter_admins(user_list):
 **Test Case Categories:**
 
 | Category | Purpose | Example |
-|----------|---------|---------|
+| ---------- | --------- | --------- |
 | Happy Path | Normal use | Valid login succeeds |
 | Negative | Invalid input | Empty password fails |
 | Boundary | Edge values | Password exactly 8 chars |
 | Error | Error handling | Network failure handled |
 
 **Hands-on Exercise:**
+
 ```python
 # Design test cases for a login function
 """
@@ -324,11 +342,13 @@ Test Cases to Write:
 ### Day 9: Parameterized Tests
 
 **Learning Objectives:**
+
 - Run same test with different data
 - Reduce test code duplication
 - Data-driven testing
 
 **Hands-on Exercise:**
+
 ```python
 import pytest
 
@@ -362,6 +382,7 @@ def test_addition(a, b, expected):
 **Project:** Test Suite for Calculator Module
 
 Requirements:
+
 - Calculator class with add, subtract, multiply, divide
 - Comprehensive test coverage
 - Parameterized tests for multiple inputs
@@ -374,6 +395,7 @@ Requirements:
 ### Day 11: Web Fundamentals for Testing
 
 **Learning Objectives:**
+
 - HTML structure understanding
 - CSS selectors
 - DevTools mastery
@@ -381,7 +403,7 @@ Requirements:
 **Quick Reference:**
 
 | HTML Element | CSS Selector | Role |
-|--------------|--------------|------|
+| -------------- | -------------- | ------ |
 | `<input id="email">` | `#email` | Text input |
 | `<button class="submit">` | `.submit` | Button |
 | `<a href="/login">` | `a[href="/login"]` | Link |
@@ -394,11 +416,13 @@ Requirements:
 ### Day 12: Playwright Basics
 
 **Learning Objectives:**
+
 - Setup and configuration
 - Navigation and basic actions
 - Screenshots and video
 
 **Setup and First Test:**
+
 ```python
 # conftest.py
 import pytest
@@ -427,11 +451,13 @@ def test_navigation_to_login(page: Page):
 ### Day 13: Locators and Actions
 
 **Learning Objectives:**
+
 - Modern locator strategies
 - User interactions
 - Waiting strategies
 
 **Locator Priority:**
+
 ```python
 # Best practices - Use in this order:
 
@@ -454,6 +480,7 @@ page.locator(".submit-button")
 ```
 
 **Actions:**
+
 ```python
 # Common actions
 page.fill("#username", "testuser")        # Type text
@@ -468,11 +495,13 @@ page.press("#search", "Enter")            # Keyboard
 ### Day 14: Page Object Model
 
 **Learning Objectives:**
+
 - Organize test code with POM
 - Create maintainable page classes
 - Separate concerns
 
 **Implementation:**
+
 ```python
 # pages/login_page.py
 from playwright.sync_api import Page, expect
@@ -524,6 +553,7 @@ def test_invalid_login(page):
 **Project:** Automate Login Feature
 
 Requirements:
+
 - Page Object for login page
 - Positive and negative test cases
 - Parameterized credentials
@@ -536,17 +566,20 @@ Requirements:
 ### Day 16: GitHub Copilot Setup
 
 **Learning Objectives:**
+
 - Install and configure Copilot
 - Understand capabilities and limitations
 - First AI-assisted code
 
 **Configuration:**
+
 1. Install GitHub Copilot extension
 2. Install GitHub Copilot Chat extension
 3. Sign in with GitHub account
 4. Configure settings (enable/disable for specific languages)
 
 **First Exercise:**
+
 ```python
 # Let Copilot help complete these:
 
@@ -566,6 +599,7 @@ def validate_phone(
 ### Day 17: Effective Prompting
 
 **Learning Objectives:**
+
 - Write clear, specific prompts
 - Use context effectively
 - Iterate on suggestions
@@ -606,6 +640,7 @@ Output as Python dict.
 ### Day 18: Reviewing AI Code
 
 **Learning Objectives:**
+
 - Critical evaluation of AI output
 - Identify common mistakes
 - Improve and refactor
@@ -613,7 +648,7 @@ Output as Python dict.
 **Review Checklist:**
 
 | Area | Questions to Ask |
-|------|------------------|
+| ------ | ------------------ |
 | **Correctness** | Does it match requirements? |
 | **Locators** | Are they reliable? Will they break easily? |
 | **Waits** | Does it wait for elements properly? |
@@ -629,13 +664,14 @@ Output as Python dict.
 ### Day 19: Integration Project
 
 **Learning Objectives:**
+
 - Combine manual and AI-assisted coding
 - Build complete test suite
 - Apply best practices
 
 **Project:** E-commerce Test Suite
 
-```
+```text
 Structure:
 ├── tests/
 │   ├── test_login.py
@@ -654,6 +690,7 @@ Structure:
 ```
 
 Use Copilot for:
+
 - Generating initial page object structure
 - Creating test data
 - Writing test cases
@@ -667,13 +704,14 @@ Then review and improve each component.
 **Assessment Structure:**
 
 | Component | Weight | Task |
-|-----------|--------|------|
+| ----------- | -------- | ------ |
 | Quiz | 20% | Python, pytest, Playwright concepts |
 | Code Review | 25% | Review AI-generated test, list improvements |
 | Live Coding | 30% | Write test with AI assistance for given scenario |
 | Project Review | 25% | Present mini-project, explain decisions |
 
 **Competency Checklist:**
+
 - [ ] Write Python functions and classes
 - [ ] Create pytest tests with fixtures and parameters
 - [ ] Implement Page Object Model
@@ -687,7 +725,7 @@ Then review and improve each component.
 ## Weekly Summary
 
 | Week | Focus | Key Deliverable |
-|------|-------|-----------------|
+| ------ | ------- | ----------------- |
 | 1 | Python Essentials | User Management Module |
 | 2 | Testing Fundamentals | Calculator Test Suite |
 | 3 | Playwright | Login Automation with POM |
@@ -698,13 +736,17 @@ Then review and improve each component.
 ## Resources
 
 **Python:**
-- Real Python: https://realpython.com/
+
+- Real Python: <https://realpython.com/>
 
 **pytest:**
-- Official Docs: https://docs.pytest.org/
+
+- Official Docs: <https://docs.pytest.org/>
 
 **Playwright:**
-- Python Docs: https://playwright.dev/python/
+
+- Python Docs: <https://playwright.dev/python/>
 
 **GitHub Copilot:**
-- Best Practices: https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
+
+- Best Practices: <https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot>

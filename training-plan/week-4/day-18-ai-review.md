@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Topic | Activity |
-|------|-------|----------|
+| ------ | ------- | ---------- |
 | 0:00-0:10 | Recap & Code Review Introduction | Discussion |
 | 0:10-0:30 | Review Workflow with Copilot | Demo |
 | 0:30-0:50 | Review Prompts: Quality, Coverage, Performance | Hands-on |
@@ -27,7 +27,7 @@
 
 ## Visual Concept: AI Code Review Workflow
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                  AI Review Pipeline                         │
 ├─────────────────────────────────────────────────────────────┤
@@ -54,7 +54,7 @@
 
 ### Review Workflow
 
-```
+```text
 1. Select code block
 2. Ctrl+I (inline chat) or Ctrl+L (chat panel)
 3. Ask for review:
@@ -69,7 +69,7 @@
 
 ### Test Quality Review
 
-```
+```text
 Review this test code and identify:
 1. Missing assertions
 2. Hard-coded values that should be parametrized
@@ -82,7 +82,7 @@ Review this test code and identify:
 
 ### Coverage Analysis
 
-```
+```text
 Analyze this test file and identify:
 1. What scenarios are NOT covered?
 2. What boundary conditions are missing?
@@ -93,7 +93,7 @@ Analyze this test file and identify:
 
 ### Performance Review
 
-```
+```text
 Review this test for performance issues:
 1. Unnecessary waits
 2. Redundant operations
@@ -211,15 +211,18 @@ def test_search_results(page):
 ## Homework
 
 ### Reading
+
 - [Test Code Anti-patterns](https://blog.codepipes.com/testing/software-testing-antipatterns.html)
 - [Effective Code Review](https://google.github.io/eng-practices/review/)
 
 ### Coding Tasks
+
 1. **Full Project Review**: Review all Week 3 project tests with AI, apply improvements
 2. **Personal Checklist**: Create your own "code review checklist" based on AI suggestions
 3. **Comparison Study**: Review the same code manually first, then with AI - note differences
 
 ### Quiz Yourself
+
 - What are the 3 most common issues AI catches in test code?
 - How can AI help identify coverage gaps?
 - What's the difference between /fix and asking for a review?

@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Review Day 1 & intro |
 | 20 min | Comparison & logical operators |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## Visual Concept
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    CONTROL FLOW                              │
 ├─────────────────────────────────────────────────────────────┤
@@ -117,7 +117,7 @@ for username, password in test_cases:
 ### Comparison Operators
 
 | Operator | Meaning | Example |
-|----------|---------|---------|
+| ---------- | --------- | --------- |
 | `==` | Equal | `x == 5` |
 | `!=` | Not equal | `x != 5` |
 | `<` | Less than | `x < 5` |
@@ -128,7 +128,7 @@ for username, password in test_cases:
 ### Logical Operators
 
 | Operator | Meaning | Example |
-|----------|---------|---------|
+| ---------- | --------- | --------- |
 | `and` | Both true | `x > 0 and x < 10` |
 | `or` | Either true | `x < 0 or x > 10` |
 | `not` | Negation | `not x` |
@@ -190,15 +190,18 @@ for email, expected in test_emails:
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Python If...Else](https://www.w3schools.com/python/python_conditions.asp)
 2. [Python Operators](https://www.w3schools.com/python/python_operators.asp)
 
 ### Coding Tasks
+
 1. **Grade Calculator:** Write a function that converts score (0-100) to letter grade (A, B, C, D, F)
 2. **Number Guessing Game:** Create a game that tells user "higher/lower" until they guess correctly
 3. **Password Strength Checker:** Check if password has uppercase, lowercase, number, and special char
 
 ### Quiz Yourself
+
 1. What's the difference between `==` and `=`?
 2. When does an `elif` block execute?
 3. What values are considered "falsy" in Python?

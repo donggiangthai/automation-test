@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Why data-driven testing? |
 | 20 min | @parametrize syntax & options |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## Visual Concept
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │           DATA-DRIVEN TESTING                                │
 ├─────────────────────────────────────────────────────────────┤
@@ -187,7 +187,7 @@ def test_combinations(x, y):
 
 ## Running Output
 
-```
+```text
 tests/test_login_validation.py::test_email_validation[user@example.com-True] PASSED
 tests/test_login_validation.py::test_email_validation[user@domain.co.uk-True] PASSED
 tests/test_login_validation.py::test_email_validation[invalid-email-False] PASSED
@@ -227,16 +227,19 @@ def test_cart_total(quantity, price, discount, expected_total):
 ## Homework (2 hours)
 
 ### Reading
+
 1. [pytest Parametrize](https://docs.pytest.org/en/stable/how-to/parametrize.html)
 2. [pytest.param](https://docs.pytest.org/en/stable/reference/reference.html#pytest-param)
 
 ### Coding Tasks
+
 1. **Validation Suite:** Create 15 parameterized tests for:
    - Email validation (8 cases)
    - Phone number validation (5 cases)
    - Age validation (4 cases: under 0, 0, valid, over 150)
 
 2. **External Data:** Load test data from JSON:
+
    ```python
    import json
    with open("test_data.json") as f:
@@ -250,6 +253,7 @@ def test_cart_total(quantity, price, discount, expected_total):
 3. **Matrix Testing:** Create tests with combined parametrize decorators (e.g., browsers x viewports)
 
 ### Quiz Yourself
+
 1. How do you give meaningful IDs to test cases?
 2. What happens when you stack multiple `@parametrize` decorators?
 3. How do you use `pytest.approx` for float comparisons?

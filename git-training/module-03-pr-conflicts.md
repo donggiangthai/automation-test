@@ -9,7 +9,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 15 min | PR workflow introduction |
 | 30 min | Creating good PRs (hands-on) |
 | 30 min | Conflict resolution |
@@ -23,7 +23,7 @@
 
 ### Visual: PR Workflow
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    PR WORKFLOW                              │
 ├─────────────────────────────────────────────────────────────┤
@@ -44,7 +44,8 @@
 ### Good PR Practices
 
 **PR Title:**
-```
+
+```text
 ✅ Good: "Add login page E2E tests with POM pattern"
 ✅ Good: "Fix flaky checkout test - add explicit waits"
 ❌ Bad:  "Update tests"
@@ -52,6 +53,7 @@
 ```
 
 **PR Description Template:**
+
 ```markdown
 ## What does this PR do?
 - Adds E2E tests for login functionality
@@ -117,7 +119,7 @@ git branch -d feature/checkout-tests
 
 When two people change **the same lines** in the same file, Git cannot automatically decide which version to keep.
 
-```
+```text
 <<<<<<< HEAD
 def test_login_success(page):
     page.goto("/login")
@@ -128,6 +130,7 @@ def test_valid_login(page):
 ```
 
 **What this means:**
+
 - `<<<<<<< HEAD`: Your current branch's version
 - `=======`: Separator
 - `>>>>>>> feature/rename-tests`: The other branch's version
@@ -148,6 +151,7 @@ code test_login.py
 ```
 
 **In VS Code, you'll see buttons:**
+
 - **Accept Current Change** - Keep your version
 - **Accept Incoming Change** - Keep their version
 - **Accept Both Changes** - Keep both
@@ -163,7 +167,7 @@ git commit -m "Resolve merge conflict in test_login.py"
 
 ### Visual: Conflict Resolution
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                  CONFLICT RESOLUTION                         │
 ├─────────────────────────────────────────────────────────────┤
@@ -190,7 +194,7 @@ git commit -m "Resolve merge conflict in test_login.py"
 
 ### Avoiding Conflicts
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                CONFLICT PREVENTION TIPS                      │
 ├─────────────────────────────────────────────────────────────┤
@@ -211,6 +215,7 @@ git commit -m "Resolve merge conflict in test_login.py"
 ### Why .gitignore?
 
 Some files should **never** be committed:
+
 - Generated files (reports, screenshots)
 - Environment-specific files (.env)
 - Dependencies (venv, node_modules)
@@ -272,7 +277,7 @@ temp/
 
 ### What NOT to Ignore
 
-```
+```text
 # Keep these in version control:
 ✅ pytest.ini
 ✅ conftest.py

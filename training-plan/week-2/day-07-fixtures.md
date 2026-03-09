@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Fixture concepts introduction |
 | 15 min | Test isolation principle |
 | 30 min | Hands-on demo: fixtures & conftest |
@@ -27,7 +27,7 @@
 
 ## 🔴 CRITICAL: Test Isolation Principle
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    TEST ISOLATION RULES                     │
 ├─────────────────────────────────────────────────────────────┤
@@ -208,7 +208,7 @@ def test_cart_starts_empty(empty_cart):
 ## Fixture Scopes
 
 | Scope | When Created | When Destroyed |
-|-------|--------------|----------------|
+| ------- | -------------- | ---------------- |
 | `function` (default) | Before each test | After each test |
 | `class` | Before first test in class | After last test in class |
 | `module` | Before first test in file | After last test in file |
@@ -252,10 +252,12 @@ def app_config():
 ## Homework (2 hours)
 
 ### Reading
+
 1. [pytest Fixtures Documentation](https://docs.pytest.org/en/stable/how-to/fixtures.html)
 2. [Fixture Scope](https://docs.pytest.org/en/stable/how-to/fixtures.html#scope-sharing-fixtures-across-classes-modules-packages-or-session)
 
 ### Coding Tasks
+
 1. **Test Data Factory:** Create `utils/test_data_factory.py` with pure functions:
    - `create_user_data(username, email, role)`
    - `create_product_data(name, price, category)`
@@ -266,6 +268,7 @@ def app_config():
 3. **Cleanup Pattern:** Implement a fixture that creates a temporary file and cleans it up after test
 
 ### Quiz Yourself
+
 1. What's the difference between `function` and `session` scope?
 2. How does `yield` enable cleanup in fixtures?
 3. Why is test isolation important?

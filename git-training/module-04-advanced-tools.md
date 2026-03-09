@@ -9,7 +9,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 20 min | Commit message conventions |
 | 25 min | Troubleshooting common issues |
 | 30 min | VS Code Git integration (hands-on) |
@@ -34,6 +34,7 @@ chore:    Maintenance (deps, config)
 ```
 
 **Examples:**
+
 ```bash
 git commit -m "test: Add login page E2E tests"
 git commit -m "test: Add product search tests with data-driven approach"
@@ -47,7 +48,7 @@ git commit -m "chore: Update Playwright version"
 
 ### Commit Frequency
 
-```
+```text
 ✅ Good: Commit after completing a logical unit
    - "Add LoginPage page object"
    - "Add test_valid_login test"
@@ -167,7 +168,7 @@ echo "filename.py" >> .gitignore
 
 ### Built-in Git Features
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                  VS CODE GIT PANEL                          │
 ├─────────────────────────────────────────────────────────────┤
@@ -191,7 +192,7 @@ echo "filename.py" >> .gitignore
 ### Key Actions in VS Code
 
 | Action | How to Do It |
-|--------|--------------|
+| -------- | -------------- |
 | Open Source Control | `Ctrl+Shift+G` |
 | Stage file | Click `+` next to file |
 | Unstage file | Click `-` next to staged file |
@@ -202,7 +203,7 @@ echo "filename.py" >> .gitignore
 
 ### Status Bar
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  Left side of VS Code status bar:                           │
 │                                                             │
@@ -220,7 +221,7 @@ echo "filename.py" >> .gitignore
 
 Install "GitLens" from VS Code extensions for:
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  GitLens Features:                                          │
 │                                                             │
@@ -239,7 +240,7 @@ Install "GitLens" from VS Code extensions for:
 ### Daily Commands
 
 | Command | What It Does |
-|---------|--------------|
+| --------- | -------------- |
 | `git status` | Check current state |
 | `git add .` | Stage all changes |
 | `git commit -m "msg"` | Save changes |
@@ -249,7 +250,7 @@ Install "GitLens" from VS Code extensions for:
 ### Branch Commands
 
 | Command | What It Does |
-|---------|--------------|
+| --------- | -------------- |
 | `git branch` | List branches |
 | `git checkout -b name` | Create & switch |
 | `git checkout main` | Switch to main |
@@ -259,7 +260,7 @@ Install "GitLens" from VS Code extensions for:
 ### History Commands
 
 | Command | What It Does |
-|---------|--------------|
+| --------- | -------------- |
 | `git log --oneline` | Compact history |
 | `git diff` | See changes |
 | `git blame file` | Who changed what |
@@ -268,7 +269,7 @@ Install "GitLens" from VS Code extensions for:
 ### Undo Commands
 
 | Command | What It Does |
-|---------|--------------|
+| --------- | -------------- |
 | `git checkout -- file` | Discard changes |
 | `git reset HEAD file` | Unstage file |
 | `git reset --soft HEAD~1` | Undo commit (keep changes) |
@@ -360,7 +361,7 @@ echo "✅ Exercise complete! You've mastered Git basics!"
 ## Summary: What You've Learned
 
 | Module | Key Skills |
-|--------|------------|
+| -------- | ------------ |
 | Module 1 | Git setup, 3 states, basic workflow |
 | Module 2 | Branching, remote, sync workflow |
 | Module 3 | PRs, conflict resolution, .gitignore |
@@ -386,7 +387,9 @@ echo "✅ Exercise complete! You've mastered Git basics!"
 
 ---
 
-**Congratulations! You've completed the Git training! 🎉**
+### Congratulations
+
+You've completed the Git training! 🎉
 
 ---
 

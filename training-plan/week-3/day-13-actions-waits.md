@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Actions overview |
 | 15 min | Assertions & expect API |
 | 25 min | Wait strategies (CRITICAL!) |
@@ -161,7 +161,7 @@ def test_wait_for_api_response(page: Page):
 ### Wait Strategy Decision Guide
 
 | Scenario | Wait Method |
-|----------|-------------|
+| ---------- | ------------- |
 | Element appears | `expect(locator).to_be_visible()` |
 | Page navigation | `page.expect_navigation()` |
 | API call completes | `page.expect_response(url)` |
@@ -200,7 +200,7 @@ def test_conditional_element(page: Page):
 
 ## Practice Exercise
 
-Write tests for https://the-internet.herokuapp.com/dynamic_loading/2:
+Write tests for <https://the-internet.herokuapp.com/dynamic_loading/2>:
 
 ```python
 # tests/test_dynamic_loading.py
@@ -233,11 +233,13 @@ def test_dropdown_selection(page: Page):
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Playwright Actions](https://playwright.dev/python/docs/input)
 2. [Playwright Assertions](https://playwright.dev/python/docs/test-assertions)
 3. [Auto-waiting](https://playwright.dev/python/docs/actionability)
 
 ### Coding Tasks
+
 1. **Action Suite:** Write tests covering:
    - Text input (fill, type, clear)
    - Click variations (single, double, right)
@@ -255,6 +257,7 @@ def test_dropdown_selection(page: Page):
    - Check conditional elements
 
 ### Quiz Yourself
+
 1. Why is `time.sleep()` bad in automation?
 2. What's the difference between `fill()` and `type()`?
 3. How does Playwright auto-wait work?

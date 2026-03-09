@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | Locator strategies overview |
 | 20 min | Locator decision guide |
 | 30 min | Hands-on demo with DevTools |
@@ -79,7 +79,7 @@ def test_test_id_locators(page: Page):
 
 ## 🔴 CRITICAL: Locator Decision Guide
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                    LOCATOR DECISION GUIDE                       │
 ├─────────────────────────────────────────────────────────────────┤
@@ -110,7 +110,7 @@ def test_test_id_locators(page: Page):
 ## Locator Priority (Best to Worst)
 
 | Priority | Method | Example |
-|----------|--------|---------|
+| ---------- | -------- | --------- |
 | 1 | Role-based | `get_by_role("button", name="Submit")` |
 | 2 | Label | `get_by_label("Email")` |
 | 3 | Placeholder | `get_by_placeholder("Enter email")` |
@@ -185,10 +185,12 @@ def test_dropdown(page: Page):
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Playwright Locators](https://playwright.dev/python/docs/locators)
 2. [Best Practices - Locators](https://playwright.dev/python/docs/best-practices#use-locators)
 
 ### Coding Tasks
+
 1. **Locator Audit:** Review 5 existing tests and improve their locators
 2. **DevTools Practice:** Use browser DevTools to find locators for 10 elements on different sites
 3. **Create Cheatsheet:** Document your preferred locator patterns for common elements:
@@ -199,6 +201,7 @@ def test_dropdown(page: Page):
    - Tables
 
 ### Quiz Yourself
+
 1. What's the priority order for locator strategies?
 2. When should you use `data-testid` vs role-based locators?
 3. Why avoid CSS class selectors like `.btn-primary`?

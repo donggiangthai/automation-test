@@ -45,6 +45,7 @@ flowchart LR
 **Objectives:** Master list comprehensions, generators, decorators
 
 **Content:**
+
 ```python
 # List Comprehensions - Beyond Basics
 users = [{"name": "Alice", "role": "admin"}, {"name": "Bob", "role": "user"}]
@@ -76,6 +77,7 @@ for user in test_data_generator(1000):
 **Objectives:** Write custom decorators, understand context management
 
 **Content:**
+
 ```python
 import functools
 import time
@@ -132,6 +134,7 @@ with test_environment() as config:
 **Objectives:** Factory, Singleton, Strategy patterns for testing
 
 **Content:**
+
 ```python
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
@@ -195,6 +198,7 @@ class TestRunner:
 **Objectives:** Strong typing, dataclasses, pydantic for test data
 
 **Content:**
+
 ```python
 from dataclasses import dataclass, field
 from typing import Optional, List
@@ -242,6 +246,7 @@ creds = LoginCredentials(username="admin", password="password123")
 **Project:** Build a reusable test data framework
 
 Deliverables:
+
 - Factory classes for common entities
 - Type-safe data models with validation
 - Custom decorators for test utilities
@@ -256,6 +261,7 @@ Deliverables:
 **Objectives:** Customize pytest behavior, write fixtures that scale
 
 **Content:**
+
 ```python
 # conftest.py - Advanced fixtures
 
@@ -305,6 +311,7 @@ def pytest_collection_modifyitems(config, items):
 **Objectives:** Organize and selectively run tests
 
 **Content:**
+
 ```python
 import pytest
 
@@ -350,6 +357,7 @@ testpaths = tests
 **Objectives:** Generate reports, measure coverage
 
 **Content:**
+
 ```bash
 # Install dependencies
 pip install pytest-html pytest-cov allure-pytest
@@ -394,6 +402,7 @@ def test_valid_login(page):
 **Objectives:** Run tests in parallel, optimize execution
 
 **Content:**
+
 ```bash
 # Install pytest-xdist
 pip install pytest-xdist
@@ -437,6 +446,7 @@ def session_data(tmp_path_factory, worker_id):
 **Project:** Design scalable test architecture
 
 Deliverables:
+
 - Modular conftest hierarchy
 - Custom markers and pytest plugins
 - Parallel execution strategy
@@ -451,6 +461,7 @@ Deliverables:
 **Objectives:** Mock APIs, intercept network requests
 
 **Content:**
+
 ```python
 from playwright.sync_api import Page, Route
 
@@ -491,6 +502,7 @@ def test_modify_response(page: Page):
 **Objectives:** Handle complex auth, persist sessions
 
 **Content:**
+
 ```python
 # conftest.py - Reusable authentication
 import json
@@ -539,6 +551,7 @@ def test_dashboard_loads(auth_page):
 **Objectives:** Screenshot comparison, visual regression
 
 **Content:**
+
 ```python
 from playwright.sync_api import Page, expect
 
@@ -572,6 +585,7 @@ def test_responsive_visual(page: Page):
 **Objectives:** Build reusable test infrastructure
 
 **Content:**
+
 ```python
 # utils/playwright_utils.py
 from playwright.sync_api import Page, Locator
@@ -635,6 +649,7 @@ def test_form_submission(page, helper):
 **Project:** Complex E2E scenario automation
 
 Deliverables:
+
 - Multi-step workflow testing
 - API + UI hybrid tests
 - Cross-browser configuration
@@ -651,6 +666,7 @@ Deliverables:
 **Content:**
 
 **Prompt Engineering:**
+
 ```python
 # Complex test generation prompt
 
@@ -679,7 +695,8 @@ Use:
 ```
 
 **Copilot Chat Workflows:**
-```
+
+```text
 # Explain code
 /explain this test
 
@@ -705,7 +722,7 @@ Use:
 **Review Framework:**
 
 | Aspect | Questions | Fix Strategy |
-|--------|-----------|--------------|
+| -------- | ----------- | -------------- |
 | **Accuracy** | Does it match requirements? | Compare to spec |
 | **Reliability** | Will it work consistently? | Add waits, retries |
 | **Maintainability** | Can others understand it? | Refactor, document |
@@ -721,6 +738,7 @@ Use:
 **Objectives:** Run tests in CI pipeline, GitHub Actions
 
 **Content:**
+
 ```yaml
 # .github/workflows/tests.yml
 name: Playwright Tests
@@ -773,6 +791,7 @@ jobs:
 **Project:** Full Automation Framework
 
 Requirements:
+
 - Complete test framework structure
 - Multiple test suites (smoke, regression)
 - Page Object Model implementation
@@ -780,7 +799,7 @@ Requirements:
 - Test reporting
 - AI-assisted development documented
 
-```
+```text
 project/
 ├── .github/
 │   └── workflows/
@@ -810,13 +829,14 @@ project/
 **Assessment:**
 
 | Component | Weight | Task |
-|-----------|--------|------|
+| ----------- | -------- | ------ |
 | Technical Interview | 25% | Architecture decisions, design patterns |
 | Live Debugging | 25% | Fix failing tests, identify issues |
 | Capstone Review | 30% | Present project, defend decisions |
 | AI Evaluation | 20% | Generate and review test suite |
 
 **Advanced Competencies:**
+
 - [ ] Design scalable test architecture
 - [ ] Implement advanced pytest features
 - [ ] Use Playwright advanced patterns (network, auth, visual)
@@ -829,7 +849,7 @@ project/
 ## Weekly Summary
 
 | Week | Focus | Deliverable |
-|------|-------|-------------|
+| ------ | ------- | ------------- |
 | 1 | Python Mastery | Test Data Framework |
 | 2 | pytest Advanced | Scalable Test Architecture |
 | 3 | Playwright Deep | Advanced E2E Patterns |
@@ -842,15 +862,18 @@ project/
 After completing this training:
 
 **Immediate (1-2 weeks):**
+
 - Apply skills to real project
 - Set up test framework from scratch
 
 **Short-term (1-3 months):**
+
 - Explore API testing (requests, httpx)
 - Learn performance testing basics
 - Contribute to test automation at work
 
 **Long-term (3-6 months):**
+
 - Test architecture design
 - Mentoring junior testers
 - CI/CD optimization
@@ -861,13 +884,17 @@ After completing this training:
 ## Resources
 
 **Advanced Python:**
-- Fluent Python: https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/
+
+- Fluent Python: <https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/>
 
 **pytest:**
-- pytest Plugins: https://docs.pytest.org/en/latest/reference/plugin_list.html
+
+- pytest Plugins: <https://docs.pytest.org/en/latest/reference/plugin_list.html>
 
 **Playwright:**
-- Advanced: https://playwright.dev/python/docs/test-runners
+
+- Advanced: <https://playwright.dev/python/docs/test-runners>
 
 **CI/CD:**
-- GitHub Actions: https://docs.github.com/en/actions
+
+- GitHub Actions: <https://docs.github.com/en/actions>

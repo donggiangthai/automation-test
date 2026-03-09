@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | E2E testing intro & Playwright overview |
 | 20 min | Installation & project setup |
 | 30 min | Hands-on demo: first tests |
@@ -179,7 +179,7 @@ playwright show-trace test-results/trace.zip
 
 ## Practice Exercise
 
-Write tests for https://the-internet.herokuapp.com:
+Write tests for <https://the-internet.herokuapp.com>:
 
 ```python
 # tests/test_internet.py
@@ -206,10 +206,12 @@ def test_login_page_elements(page: Page):
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Playwright Python Getting Started](https://playwright.dev/python/docs/intro)
 2. [pytest-playwright Plugin](https://playwright.dev/python/docs/test-runners)
 
 ### Coding Tasks
+
 1. **First Test Suite:** Write 5 navigation tests for different pages on the-internet.herokuapp.com
 2. **Screenshot on Fail:** Verify conftest.py captures screenshots when tests fail
 3. **Explore Options:** Try these flags:
@@ -218,6 +220,7 @@ def test_login_page_elements(page: Page):
    - `--browser firefox` (different browser)
 
 ### Quiz Yourself
+
 1. What's the difference between `page.goto()` and `page.wait_for_url()`?
 2. Why do we set `default_timeout` in conftest.py?
 3. What does `expect(page).to_have_title()` do?

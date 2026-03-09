@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Topic | Activity |
-|------|-------|----------|
+| ------ | ------- | ---------- |
 | 0:00-0:10 | Introduction to AI-Assisted Testing | Lecture |
 | 0:10-0:25 | GitHub Copilot Setup & Configuration | Demo |
 | 0:25-0:45 | Key Features: Inline, Chat, Commands | Hands-on |
@@ -27,7 +27,7 @@
 
 ## Visual Concept: AI-Assisted Testing Workflow
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                   AI-Assisted Testing                       │
 ├─────────────────────────────────────────────────────────────┤
@@ -108,7 +108,7 @@ def calculate_order_total(items):
 
 ### 2. Copilot Chat (Ctrl+L)
 
-```
+```text
 You: How do I write a pytest fixture?
 Copilot: Here's a basic pytest fixture...
 ```
@@ -125,7 +125,7 @@ Copilot: Here's a basic pytest fixture...
 ## Essential Shortcuts
 
 | Action | Windows/Linux | Mac |
-|--------|---------------|-----|
+| -------- | --------------- | ----- |
 | Accept suggestion | Tab | Tab |
 | Dismiss suggestion | Esc | Esc |
 | Open Chat panel | Ctrl+L | Cmd+L |
@@ -138,22 +138,26 @@ Copilot: Here's a basic pytest fixture...
 ## Copilot Modes
 
 ### /explain
-```
+
+```text
 /explain what does this function do?
 ```
 
 ### /fix
-```
+
+```text
 /fix this test is failing
 ```
 
 ### /tests
-```
+
+```text
 /tests generate tests for this function
 ```
 
 ### /doc
-```
+
+```text
 /doc add documentation
 ```
 
@@ -187,15 +191,18 @@ def validate_email(email: str) -> bool:
 ## Homework
 
 ### Reading
+
 - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
 - [VS Code + Copilot Tips](https://code.visualstudio.com/docs/copilot/overview)
 
 ### Coding Tasks
+
 1. **Copilot Exploration**: Explore all Copilot Chat slash commands (/explain, /fix, /tests, /doc)
 2. **Test Generation**: Write 5 pytest tests with Copilot assistance for a simple utility module
 3. **Workflow Document**: Create a personal note documenting your preferred Copilot shortcuts and patterns
 
 ### Quiz Yourself
+
 - What's the difference between Tab completion and Chat in Copilot?
 - When should you use inline chat (Ctrl+I) vs Chat panel (Ctrl+L)?
 - Name 3 slash commands available in Copilot Chat

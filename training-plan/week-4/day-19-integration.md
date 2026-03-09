@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Topic | Activity |
-|------|-------|----------|
+| ------ | ------- | ---------- |
 | 0:00-0:10 | Recap & Integration Overview | Discussion |
 | 0:10-0:30 | Daily Workflow with AI | Lecture |
 | 0:30-0:50 | Integration Points: Planning → Docs | Demo |
@@ -27,7 +27,7 @@
 
 ## Visual Concept: Integrated AI Workflow
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                Daily AI-Assisted Workflow                   │
 ├─────────────────────────────────────────────────────────────┤
@@ -55,7 +55,7 @@
 
 ### Morning: Test Planning
 
-```
+```text
 1. Review requirements/stories
 2. Ask AI: "Generate test scenarios for [feature]"
 3. Refine and prioritize scenarios
@@ -64,7 +64,7 @@
 
 ### Development: Write Tests
 
-```
+```text
 1. Start with comments describing test intent
 2. Let Copilot suggest implementation
 3. Review and adjust suggestions
@@ -73,7 +73,7 @@
 
 ### Review: Before Commit
 
-```
+```text
 1. Ask AI to review test file
 2. Check for missing coverage
 3. Verify best practices
@@ -119,7 +119,7 @@ def test_add_to_cart():
 
 ### 1. Test Planning
 
-```
+```text
 INPUT: User story or requirement
 AI PROMPT: "Generate test scenarios covering:
 - Happy path
@@ -131,7 +131,7 @@ OUTPUT: List of test cases
 
 ### 2. Test Implementation
 
-```
+```text
 INPUT: Test scenario description
 AI PROMPT: "Write pytest + playwright test for:
 [scenario description]
@@ -141,7 +141,7 @@ OUTPUT: Test code
 
 ### 3. Debugging
 
-```
+```text
 INPUT: Failing test + error message
 AI PROMPT: "Debug this test failure:
 [error message]
@@ -152,7 +152,7 @@ OUTPUT: Root cause + fix
 
 ### 4. Documentation
 
-```
+```text
 INPUT: Test file
 AI PROMPT: "Generate documentation for these tests:
 - Purpose of each test
@@ -167,7 +167,7 @@ OUTPUT: README or docstrings
 
 ### Keyboard-Centric Flow
 
-```
+```text
 Tab         → Accept suggestion
 Esc         → Dismiss, try again
 Ctrl+I      → Quick refactor/question
@@ -177,7 +177,7 @@ Ctrl+Enter  → Run test (with test extension)
 
 ### Iterative Refinement
 
-```
+```text
 First attempt:
 "Write a login test"
 → Too generic
@@ -237,20 +237,24 @@ def test_add_single_item():
 ## Homework
 
 ### Reading
+
 - [Test-Driven Development with AI](https://dev.to/github/how-i-use-github-copilot-for-test-driven-development)
 - [AI Productivity Patterns](https://githubnext.com/projects/copilot-workspace)
 
 ### Coding Tasks
+
 1. **Full Cycle Practice**: Create 3 complete tests using Plan → Implement → Review → Document cycle
 2. **Personal Workflow Doc**: Document your optimal AI-assisted workflow with screenshots/examples
 3. **Time Comparison**: Time yourself doing the same task with and without AI assistance
 
 ### Quiz Yourself
+
 - What are the 4 main integration points for AI in testing?
 - Why is the comment-first pattern effective with AI?
 - How should you use AI at different phases of the test development cycle?
 
 ### Prepare for Assessment
+
 - Review all concepts from Week 4
 - Practice building a complete test suite with AI assistance
 - Ensure you can use all Copilot features effectively

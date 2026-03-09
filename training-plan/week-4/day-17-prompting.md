@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Topic | Activity |
-|------|-------|----------|
+| ------ | ------- | ---------- |
 | 0:00-0:10 | Recap & Introduction to Prompting | Discussion |
 | 0:10-0:30 | CRAFT Framework for Prompts | Lecture |
 | 0:30-0:50 | QA-Specific Prompt Templates | Demo |
@@ -27,7 +27,7 @@
 
 ## Visual Concept: CRAFT Framework
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    CRAFT Framework                          │
 ├─────────────────────────────────────────────────────────────┤
@@ -60,7 +60,7 @@
 
 ### The CRAFT Framework
 
-```
+```text
 C - Context: What's the situation?
 R - Role: Who should the AI be?
 A - Action: What do you want done?
@@ -74,7 +74,7 @@ T - Target: What's the expected result?
 
 ### 1. Test Generation
 
-```
+```text
 PROMPT:
 "Generate pytest test cases for a login function.
 Context: 
@@ -91,7 +91,7 @@ Generate:
 
 ### 2. Page Object Creation
 
-```
+```text
 PROMPT:
 "Create a Page Object Model for a checkout page with:
 - URL: /checkout
@@ -104,7 +104,7 @@ PROMPT:
 
 ### 3. Bug Analysis
 
-```
+```text
 PROMPT:
 "Analyze this test failure and suggest fixes:
 [paste error message]
@@ -121,7 +121,7 @@ Provide:
 
 ### Test Case Template
 
-```
+```text
 Generate {test_type} test cases for {feature}.
 
 Context:
@@ -140,7 +140,7 @@ Output format:
 
 ### Review Template
 
-```
+```text
 Review this test code for:
 1. Test coverage gaps
 2. Assertion quality
@@ -158,7 +158,7 @@ Code:
 
 ### Step-by-step approach
 
-```
+```text
 Step 1:
 "Analyze the login page at https://example.com/login
 and list all testable elements"
@@ -206,15 +206,18 @@ T - Target:
 ## Homework
 
 ### Reading
+
 - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 - [GitHub Copilot Best Practices](https://docs.github.com/en/copilot/using-github-copilot)
 
 ### Coding Tasks
+
 1. **Prompt Library**: Create 5 custom prompt templates for different QA scenarios
 2. **Iterative Refinement**: Take one prompt and iterate 3 times, improving output each time
 3. **Comparison Study**: Write the same test 3 ways using different prompt styles, compare results
 
 ### Quiz Yourself
+
 - What does each letter in CRAFT stand for?
 - Why is prompt chaining useful for complex tasks?
 - What information should you always include in a QA prompt?

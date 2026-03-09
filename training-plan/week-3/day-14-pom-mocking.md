@@ -7,7 +7,7 @@
 ## Session Outline
 
 | Time | Activity |
-|------|----------|
+| ------ | ---------- |
 | 10 min | POM pattern introduction |
 | 20 min | Network mocking concepts |
 | 30 min | Hands-on demo (follow along) |
@@ -26,7 +26,7 @@
 
 ## 🔴 CRITICAL: Network-First Pattern
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                  NETWORK-FIRST PATTERN                          │
 ├─────────────────────────────────────────────────────────────────┤
@@ -200,7 +200,7 @@ class TestLogin:
 
 ## Practice Exercise
 
-Create a Page Object for: https://the-internet.herokuapp.com/add_remove_elements/
+Create a Page Object for: <https://the-internet.herokuapp.com/add_remove_elements/>
 
 ```python
 # pages/elements_page.py
@@ -238,10 +238,12 @@ class ElementsPage(BasePage):
 ## Homework (2 hours)
 
 ### Reading
+
 1. [Page Object Model Pattern](https://playwright.dev/python/docs/pom)
 2. [Network Mocking](https://playwright.dev/python/docs/network)
 
 ### Coding Tasks
+
 1. **POM Suite:** Create Page Objects for 3 pages:
    - LoginPage (done in demo)
    - CheckboxPage
@@ -255,6 +257,7 @@ class ElementsPage(BasePage):
 3. **Combined Tests:** Create tests using POM + mocking together
 
 ### Quiz Yourself
+
 1. What are the benefits of Page Object Model?
 2. Why setup network intercepts BEFORE navigation?
 3. How do you mock different HTTP status codes?
