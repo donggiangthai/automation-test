@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "mock-e2e-tests"
+version = "0.1.0"
+description = "E2E tests for mock project using Playwright"
+authors = ["Training Team"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.0.0"
+pytest-playwright = "^0.4.4"
+playwright = "^1.41.2"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.0"
+ruff = "^0.1.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.pytest.ini_options]
+addopts = "-v --tb=short"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "smoke: Quick sanity tests",
+    "auth: Authentication tests",
+    "products: Products page tests",
+    "inventory: Inventory page tests",
+    "orders: Orders page tests",
+    "navigation: Navigation tests",
+    "slow: Tests that take longer to run",
+]

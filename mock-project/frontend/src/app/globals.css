@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 249, 250, 251;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Editable cell styles */
+.editable-cell {
+  @apply cursor-pointer hover:bg-blue-50 transition-colors;
+}
+
+.editable-cell.selected {
+  @apply bg-blue-100 ring-2 ring-blue-500;
+}
+
+.editable-cell.editing {
+  @apply bg-white;
+}
+
+.editable-cell input {
+  @apply w-full h-full px-2 py-1 border-none outline-none bg-transparent;
+}
+
+/* Table styles */
+.data-table {
+  @apply w-full border-collapse;
+}
+
+.data-table th {
+  @apply bg-gray-100 px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b-2 border-gray-200;
+}
+
+.data-table td {
+  @apply px-4 py-3 text-sm text-gray-900 border-b border-gray-100;
+}
+
+.data-table tr:hover {
+  @apply bg-gray-50;
+}
+
+/* Sidebar transition */
+.sidebar {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.sidebar.collapsed {
+  @apply w-16;
+}
+
+.sidebar.expanded {
+  @apply w-64;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-500;
+}
+
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+}

@@ -1,0 +1,18 @@
+{
+    "json.schemaDownload.enable": true,
+    "http.systemCertificates": true,
+    "python-envs.defaultEnvManager": "ms-python.python:poetry",
+    "python-envs.defaultPackageManager": "ms-python.python:poetry",
+    "css.lint.unknownAtRules": "ignore",
+    "scss.lint.unknownAtRules": "ignore",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "python.analysis.extraPaths": [
+        "mock-project/backend",
+        "mock-project/backend/.venv/lib/python3.13/site-packages",
+        "mock-project/e2e",
+        "mock-project/e2e/.venv/lib/python3.13/site-packages"
+    ],
+    "python.defaultInterpreterPath": "mock-project/backend/.venv/bin/python"
+}
